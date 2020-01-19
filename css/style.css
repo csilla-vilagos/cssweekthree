@@ -38,10 +38,10 @@ nav a{
 	display: inline-block;
 	box-sizing: border-box;
 	width: 20%;
-    border-radius: 5px;
+        border-radius: 5px;
 	padding: 1.2%;
-    margin: 1% 2% 3%;
-    font-size: 1.7vw;
+        margin: 1% 2% 3%;
+        font-size: 1.7vw;
 }
 
 nav .active{
@@ -54,7 +54,7 @@ nav a:not(.active):hover{
 
 nav{
 	text-align: center;
-	font-family: Georgia;
+/*	font-family: Georgia;*/
 	font-weight: bold;
 /*	background-color: #231651;*/
 }
@@ -88,4 +88,50 @@ img{
 	width: 80%;
 	margin: auto;
 	margin-top: 8%;
+}
+
+table{
+	margin:auto;
+	border: 1px;
+	width: 100%;
+}
+
+/*2nd and 3rd columns should both take 20% of the table width*/
+th{
+	color: white;
+	background: rgb(152,190,102);
+	background: linear-gradient(0deg, rgba(152,190,102,1) 0%, rgba(125,136,80,1) 100%);
+	padding: 8px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid black;
+	width: 20%;
+}
+
+/*First title should align left, and take 60% of the table width*/
+th:first-child{
+	text-align: left;
+	width: 60%;
+}
+
+
+/*Google font used, had to be added to HTML*/
+tr {
+	background-color: #c2c5ae;
+	color: #22270f;
+	font-family: 'Open Sans', sans-serif;
+	opacity: 0.8;
+}
+
+/*First row should stay solid*/
+tr:first-child {
+	opacity: 1;
+}
+
+td {
+	padding: 5px;
+}
+
+/*hovering puts opacity back to 1 to highlight the row*/
+tr:hover {
+	opacity: 1;
 }
